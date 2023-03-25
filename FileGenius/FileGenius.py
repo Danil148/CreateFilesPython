@@ -90,24 +90,27 @@ class FileGenius():
         try:
             expansion = expansion.split('.')
             
-            stat = os.stat(str(way) + '.' + str(expansion[0]))
+            stat = os.stat(str(way) + '.' + str(expansion[1]))
 
             information = {
                 'Bytes': str(stat.st_size),
                 'MegaBytes': str(stat.st_size /(1024 * 1024)),
-                'Time': str(datetime.datetime.fromtimestamp(stat.st_ctime))
+                'Time': str(datetime.datetime.fromtimestamp(stat.st_ctime)),
+                'Name': str(way),
+                'Expansion': str(expansion[1])
             }
             
             return information
         except IndexError:
-            expansion = expansion.split('.')
-            
+            print(str(expansion))
             stat = os.stat(str(way) + '.' + str(expansion[0]))
 
             information = {
                 'Bytes': str(stat.st_size),
                 'MegaBytes': str(stat.st_size /(1024 * 1024)),
-                'Time': str(datetime.datetime.fromtimestamp(stat.st_ctime))
+                'Time': str(datetime.datetime.fromtimestamp(stat.st_ctime)),
+                'Name': str(way),
+                'Expansion': str(expansion[0])
             }
             
             return information
