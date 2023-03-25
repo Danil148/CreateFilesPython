@@ -26,3 +26,20 @@ CopyFile("Название файла", "Расширение файла", "Но
 -- English --
 
 Multi functional interaction with files
+
+Functions:
+
+CreateFile("File name", "File extension", "Text that will be in the file") - Create a file
+
+ReadFile("File name", "File extension", "Read type - 0 - means to output without secondary information - 1 - with information") - Reads the file
+
+EncryptFile ("File name", "File extension", "Password that will be encrypted to decrypt") - Encrypts the file
+
+DecryptFile("File name", "File extension", "File decryption password") - Decrypt the file
+
+DeleteFile("File name", "File Extension") - Deletes the file
+
+Information File("File name", "File Extension") - Displays all information about the file
+
+CopyFile("File name", "File extension", "New name of the file to be copied") - Copying the file
+
