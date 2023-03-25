@@ -2,8 +2,8 @@
 
 -- Русский --
 
-Быстрое и удобное создание файлов
+Много функциональное  взаимодейсвие с файлов
 
 -- English --
 
-Quick and convenient file creation
+Multi functional interaction with files
