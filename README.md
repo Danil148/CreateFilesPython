@@ -27,6 +27,8 @@ CopyFile("Название файла", "Расширение файла", "Но
 
 Multi functional interaction with files
 
+In order for file encryption to work, you need to install pip install pyAesCrypt
+
 Functions:
 
 CreateFile("File name", "File extension", "Text that will be in the file") - Create a file
